@@ -1,0 +1,94 @@
+<html>
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "Style.css" />
+    <head>
+        <script src="CleanWater.json"></script>
+    </head>
+<body>
+<div id="navbar" style="z-index: 1">
+  <a href="Home.html">Home</a>
+  <a href="Filters.html">Filters</a>
+  <a class=active href="Initiative.html">Initiative</a>
+</div>
+</body>
+<br>
+<body>
+<div style="color:black;padding-left:25px">
+  <h1 id=title>Taking Initiative</h1>
+</div>
+</body>
+<div class="parallax"></div>
+<center>
+    <div class="parallax"></div>
+<a name ="Quiz"></a>
+<h2 id=p>Click this button to display a quiz!</h2>
+<button class = "button button1" style = "width:400px;height:250px;font-size: 150px;font-family: comic sans ms;"onclick="quiz()">Quiz</button>
+    
+<h2 id=p>Click this button to go to the UN Clean Water and Sanitation SDG website!</h2>
+
+<a href="https://www.un.org/sustainabledevelopment/water-and-sanitation/" class="button button1"style = "width:340px;height:200px;font-size: 150px;font-family: comic sans ms;">Info</a>
+
+<h2 id=p>Click this button to donate money to help improve access to clean water and sanitation services around the world!</h2>
+
+<a href="https://www.charitywater.org/donate" class="button button1"style = "width:500px;height:200px;font-size: 150px;font-family: comic sans ms;">Donate</a>
+</center>
+<script>
+    function quiz(){
+        var score = 0
+        alert("Welcome to the Clean Water and Sanitation Quiz!")
+        alert("To choose your answer, simply type the numbers 1, 2, or 3 depending on what you think the answer is! Click OK to begin the quiz!")
+
+        var answer=prompt ("How many people out of every 10 people around the world don't have access to clean water?\n1) 2 people\n2) 3 people \n3) 0 people")
+    if (Number(answer)===2){ 
+    alert("Correct!")
+        score +=1;
+    }
+    else if (answer===null) {
+        return;
+    }
+    else{
+    alert("Incorrect, the correct answer was 3 people!")
+    }
+    var answer2 = prompt ("Which type of filter is sold in the form of a block? \n1) Activated Carbon \n2) Distillation \n3) Solar Disinfection");
+    if (Number(answer2)===1){
+    alert("Correct!")
+    score +=1;
+    }
+
+    else if (answer2===null) {
+        return;
+    }
+    else{
+    alert("Incorrect, the correct answer was activated carbon!")
+    }
+
+    var answer3=prompt ("Which filter uses coagulants, flocculants, and chlorine to kill up to 99.999% of all the germs in the water?\n1) Solar Disinfection\n2) Distillation \n3) P&G Purifier of Water packet");
+    if (Number(answer3)===3){ 
+    alert("Correct!")
+    score +=1;
+    }
+
+    else if (answer3===null) {
+        return;
+    }
+    else{
+    alert ("Incorrect,the correct answer was the P&G Purifier of Water packet!")
+    }
+    var answer4=prompt ("The scarcity of water affects around what percent of the people around the world?\n1) 50% \n2) 30% \n3) 40%");
+    if (Number(answer4)===3){ 
+    alert("Correct!")
+    score+=1;
+    }
+
+    else if (answer4===null) {
+        return;
+    }
+    else{
+    alert("Incorrect,the correct answer was 40%!")
+    }
+
+    alert ("Congratulations! You have completed the Clean Water and Sanitation Quiz! Your score was "+score+".")
+    }
+</script>
+</html>

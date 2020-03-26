@@ -1,0 +1,125 @@
+<html>
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "Style.css" />
+<br>
+    <head>
+    <script src="CleanWater.json"></script>
+    </head>
+<center>
+<body>
+<div style="color:black;padding-left:25px">
+    <h1 id=title>Filtering Methods</h1>
+</div>
+<div class="parallax"></div>
+<h2 id = p>Enter Capitalized Country Name: </h2><input style="font-size:24pt;height:70px;width:240px;"text = "text" id="mysearch">
+<button class = "button button1" style = "width:150px;height:70px;font-size:18pt;font-family: comic sans ms;"onclick="goSearch()">Submit</button>
+<h3 id="results"></h3>
+<canvas id="mycanvas" width="800"height = "1000"></canvas>
+</body>
+ <script>
+        var y = 0;
+        var newstring = "Percentage of people using safely managed drinking water services. Type 'clear' to clear graph";
+        results.innerHTML = newstring;
+        var inData = false;
+        function goSearch(){
+            inData = false;
+            var myinput = document.getElementById("mysearch").value;
+            var resultsdiv = document.getElementById('results');                
+            var c = document.getElementById("mycanvas");
+            var ctx = c.getContext('2d');
+            newstring = "Percentage of people using safely managed drinking water services";
+            for (i = 0; i<data.length; i++){
+                if (myinput == data[i]['Country']){
+                    y = y+100
+                    ctx.fillStyle="red";
+                    ctx.fillRect(0,y,data[i]['Drinking Water (%)']*10, 50);
+                    ctx.font = "30px Arial";
+                    ctx.fillStyle='black';
+                    ctx.fillText(myinput+": "+data[i]['Drinking Water (%)']+"%",0,y-10);
+                    inData = true;
+                    newstring = data[i]['Drinking Water (%)']+"% of people use safely managed drinking water services in "+myinput;
+                }
+                }
+            if(inData == false){
+                newstring = "ERROR: Could Not Find In Data";
+            }
+            if(myinput == "clear"){
+                ctx.clearRect(0, 0, c.width, c.height);
+                y = 0;
+                newstring = "Graph Cleared";
+            }if(myinput == "Clear"){
+                ctx.clearRect(0, 0, c.width, c.height);
+                y = 0;
+                newstring = "Graph Cleared";
+            }if(myinput == ""){
+                newstring = "Please Enter a Country";
+            }
+            results.innerHTML = newstring;
+            
+        }
+        
+    </script>
+    </center>
+<div class="parallax"></div>
+<body>
+<div id="navbar" style="z-index: 1">
+  <a href="Home.html">Home</a>
+  <a class=active href="Filters.html">Filters</a>
+  <a href="Initiative.html">Initiative</a>
+</div>
+</body>
+<center>
+<div style="height:1600px;background-color:#e1eff7;text-align:center;"><br><h1 id=p>FILTERS</h1>
+<p id = p>Hover over the cards to view information</p>
+<center>
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="http://www.aesarabia.com/wp-content/uploads/2015/12/activatedcarbonimg1.jpg" alt="Filter1" style="width:450px;height:300px;">
+    </div>
+    <div class="flip-card-back"style="width:450px;height:300px;">
+     <h3>Activated Carbon: This filter works by absorbing the unhealthy chemicals. It chemically bonds to the water to remove the chemicals. This filter does not work on inorganic pollutants such as nitrate, and others. It is usually sold in the form of a block.
+     </h3>
+    </div>
+  </div>
+</div>
+<br>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="http://jupiter.plymouth.edu/~wwf/distillation_files/image001.jpg" alt="Filter2" style="width:450px;height:300px;">
+    </div>
+    <div class="flip-card-back"style="width:450px;height:320px;">
+     <h3>Distillation: One of the most classic, simple, yet effective methods to filter water. First, the dirt water is boiled and evaporates, creating clean vapour, which is then condensed back into clean water which can be immediately consumed. This method gets rid of anything that has a higher boiling point than water.
+     </h3>
+    </div>
+  </div>
+</div>
+<br>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://www.koshland-science-museum.org/water/assets/400x/00000295.jpg" alt="Filter3" style="width:450px;height:300px;">
+    </div>
+    <div class="flip-card-back"style="width:450px;height:300px;">
+     <h3>Solar Disinfection: This is a portable and inexpensive method which uses solar power to disinfect biologically contaminated water. (eg. viruses, bacteria, etc.)
+     </h3>
+    </div>
+  </div>
+</div>
+<br>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://dayoneresponse.com/wp-content/uploads/2015/07/PG_12pack_02.jpg" alt="Filter3" style="width:450px;height:450px;">
+    </div>
+    <div class="flip-card-back"style="width:450px;height:450px;">
+     <h3>P&G is a packet which is a powder that uses coagulants, flocculants, and chlorine to kill up to 99.999% of all the germs.</h3>
+    </div>
+  </div>
+</div>
+    </center>
+    </div>
+</html>
+    
