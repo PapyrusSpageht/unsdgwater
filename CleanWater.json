@@ -1,0 +1,514 @@
+data = [
+  {
+    "Country": "Ethiopia",
+    "Drinking Water (%)": 4.52877
+  },
+  {
+    "Country": "Sierra Leone",
+    "Drinking Water (%)": 4.7389
+  },
+  {
+    "Country": "Uganda",
+    "Drinking Water (%)": 4.7746
+  },
+  {
+    "Country": "Lao People's Democratic Republic",
+    "Drinking Water (%)": 5.08624
+  },
+  {
+    "Country": "American Samoa",
+    "Drinking Water (%)": 12.40939
+  },
+  {
+    "Country": "Ghana",
+    "Drinking Water (%)": 13.0987
+  },
+  {
+    "Country": "Nigeria",
+    "Drinking Water (%)": 15.38151
+  },
+  {
+    "Country": "Cambodia",
+    "Drinking Water (%)": 16.87518
+  },
+  {
+    "Country": "Western Africa",
+    "Drinking Water (%)": 17.3098
+  },
+  {
+    "Country": "Sub-Saharan Africa",
+    "Drinking Water (%)": 17.74063
+  },
+  {
+    "Country": "Sub-Saharan Africa (inc. Sudan)",
+    "Drinking Water (%)": 18.17045
+  },
+  {
+    "Country": "Mongolia",
+    "Drinking Water (%)": 22.30304
+  },
+  {
+    "Country": "Nepal",
+    "Drinking Water (%)": 23.9283
+  },
+  {
+    "Country": "Least Developed Countries (LDCs)",
+    "Drinking Water (%)": 25.06339
+  },
+  {
+    "Country": "Landlocked developing countries (LLDCs)",
+    "Drinking Water (%)": 25.74908
+  },
+  {
+    "Country": "Congo",
+    "Drinking Water (%)": 27.42229
+  },
+  {
+    "Country": "Bhutan",
+    "Drinking Water (%)": 28.55129
+  },
+  {
+    "Country": "Armenia",
+    "Drinking Water (%)": 29.59756
+  },
+  {
+    "Country": "C√¥te d'Ivoire",
+    "Drinking Water (%)": 33.73684
+  },
+  {
+    "Country": "Tajikistan",
+    "Drinking Water (%)": 35.24668
+  },
+  {
+    "Country": "Philippines",
+    "Drinking Water (%)": 36.01599
+  },
+  {
+    "Country": "Pakistan",
+    "Drinking Water (%)": 37.86203
+  },
+  {
+    "Country": "Mexico",
+    "Drinking Water (%)": 38.90113
+  },
+  {
+    "Country": "Vanuatu",
+    "Drinking Water (%)": 39.59291
+  },
+  {
+    "Country": "Southern Asia",
+    "Drinking Water (%)": 40.30678
+  },
+  {
+    "Country": "Republic of Moldova",
+    "Drinking Water (%)": 40.41632
+  },
+  {
+    "Country": "Tunisia",
+    "Drinking Water (%)": 40.92445
+  },
+  {
+    "Country": "Central America",
+    "Drinking Water (%)": 42.40084
+  },
+  {
+    "Country": "Lebanon",
+    "Drinking Water (%)": 43.98826
+  },
+  {
+    "Country": "Peru",
+    "Drinking Water (%)": 45.06945
+  },
+  {
+    "Country": "Kyrgyzstan",
+    "Drinking Water (%)": 46.35087
+  },
+  {
+    "Country": "Guatemala",
+    "Drinking Water (%)": 46.63569
+  },
+  {
+    "Country": "Polynesia",
+    "Drinking Water (%)": 47.49332
+  },
+  {
+    "Country": "Nicaragua",
+    "Drinking Water (%)": 48.25971
+  },
+  {
+    "Country": "Albania",
+    "Drinking Water (%)": 49.29324
+  },
+  {
+    "Country": "Paraguay",
+    "Drinking Water (%)": 49.36394
+  },
+  {
+    "Country": "Azerbaijan",
+    "Drinking Water (%)": 49.67768
+  },
+  {
+    "Country": "Iraq",
+    "Drinking Water (%)": 50.03514
+  },
+  {
+    "Country": "Hungary",
+    "Drinking Water (%)": 50.50587
+  },
+  {
+    "Country": "China, Macao Special Administrative Region",
+    "Drinking Water (%)": 53.03816
+  },
+  {
+    "Country": "Central Asia",
+    "Drinking Water (%)": 54.55079
+  },
+  {
+    "Country": "Morocco",
+    "Drinking Water (%)": 54.775
+  },
+  {
+    "Country": "Bangladesh",
+    "Drinking Water (%)": 55.9067
+  },
+  {
+    "Country": "Latin America and the Caribbean",
+    "Drinking Water (%)": 56.22868
+  },
+  {
+    "Country": "Uzbekistan",
+    "Drinking Water (%)": 56.34099
+  },
+  {
+    "Country": "Samoa",
+    "Drinking Water (%)": 57.06663
+  },
+  {
+    "Country": "Caucasus and Central Asia",
+    "Drinking Water (%)": 57.3282
+  },
+  {
+    "Country": "Asia",
+    "Drinking Water (%)": 57.37691
+  },
+  {
+    "Country": "Kazakhstan",
+    "Drinking Water (%)": 57.54806
+  },
+  {
+    "Country": "World",
+    "Drinking Water (%)": 61.25434
+  },
+  {
+    "Country": "Ukraine",
+    "Drinking Water (%)": 65.75006
+  },
+  {
+    "Country": "Turkmenistan",
+    "Drinking Water (%)": 65.94715
+  },
+  {
+    "Country": "Ecuador",
+    "Drinking Water (%)": 66.22778
+  },
+  {
+    "Country": "Western Asia",
+    "Drinking Water (%)": 66.52928
+  },
+  {
+    "Country": "Colombia",
+    "Drinking Water (%)": 68.26307
+  },
+  {
+    "Country": "Lithuania",
+    "Drinking Water (%)": 68.65453
+  },
+  {
+    "Country": "Democratic People's Republic of Korea",
+    "Drinking Water (%)": 68.99947
+  },
+  {
+    "Country": "Micronesia",
+    "Drinking Water (%)": 70.26537
+  },
+  {
+    "Country": "Serbia",
+    "Drinking Water (%)": 74.49373
+  },
+  {
+    "Country": "Russia",
+    "Drinking Water (%)": 74.56915
+  },
+  {
+    "Country": "Georgia",
+    "Drinking Water (%)": 74.5881
+  },
+  {
+    "Country": "Puerto Rico",
+    "Drinking Water (%)": 75.01363
+  },
+  {
+    "Country": "Eastern Europe",
+    "Drinking Water (%)": 75.56992
+  },
+  {
+    "Country": "South America",
+    "Drinking Water (%)": 75.60702
+  },
+  {
+    "Country": "New Zealand",
+    "Drinking Water (%)": 78.11697
+  },
+  {
+    "Country": "Grenada",
+    "Drinking Water (%)": 78.71873
+  },
+  {
+    "Country": "China, Hong Kong Special Administrative Region",
+    "Drinking Water (%)": 79.35169
+  },
+  {
+    "Country": "Slovenia",
+    "Drinking Water (%)": 79.79192
+  },
+  {
+    "Country": "Belarus",
+    "Drinking Water (%)": 80.62173
+  },
+  {
+    "Country": "Romania",
+    "Drinking Water (%)": 81.65202
+  },
+  {
+    "Country": "Northern Mariana Islands",
+    "Drinking Water (%)": 82.02755
+  },
+  {
+    "Country": "Southern Europe",
+    "Drinking Water (%)": 86.00476
+  },
+  {
+    "Country": "New Caledonia",
+    "Drinking Water (%)": 86.22907
+  },
+  {
+    "Country": "Italy",
+    "Drinking Water (%)": 86.4651
+  },
+  {
+    "Country": "Costa Rica",
+    "Drinking Water (%)": 86.70739
+  },
+  {
+    "Country": "Bosnia and Herzegovina",
+    "Drinking Water (%)": 87.34998
+  },
+  {
+    "Country": "French Guiana",
+    "Drinking Water (%)": 88.59789
+  },
+  {
+    "Country": "Croatia",
+    "Drinking Water (%)": 88.89323
+  },
+  {
+    "Country": "Iceland",
+    "Drinking Water (%)": 89.53967
+  },
+  {
+    "Country": "Europe",
+    "Drinking Water (%)": 89.64537
+  },
+  {
+    "Country": "Andorra",
+    "Drinking Water (%)": 90.64
+  },
+  {
+    "Country": "Iran (Islamic Republic of)",
+    "Drinking Water (%)": 91.07142
+  },
+  {
+    "Country": "Developed regions (Europe, Cyprus, Israel, Northern America, Japan, Australia & New Zealand)",
+    "Drinking Water (%)": 91.65282
+  },
+  {
+    "Country": "Chile",
+    "Drinking Water (%)": 91.96177
+  },
+  {
+    "Country": "Slovakia",
+    "Drinking Water (%)": 92.17965
+  },
+  {
+    "Country": "Finland",
+    "Drinking Water (%)": 92.47528
+  },
+  {
+    "Country": "Latvia",
+    "Drinking Water (%)": 92.79144
+  },
+  {
+    "Country": "Switzerland",
+    "Drinking Water (%)": 92.82433
+  },
+  {
+    "Country": "Malaysia",
+    "Drinking Water (%)": 93.02484
+  },
+  {
+    "Country": "Ireland",
+    "Drinking Water (%)": 93.05071
+  },
+  {
+    "Country": "Estonia",
+    "Drinking Water (%)": 93.22531
+  },
+  {
+    "Country": "Portugal",
+    "Drinking Water (%)": 93.44076
+  },
+  {
+    "Country": "Denmark",
+    "Drinking Water (%)": 93.83339
+  },
+  {
+    "Country": "Greenland",
+    "Drinking Water (%)": 93.83339
+  },
+  {
+    "Country": "Jordan",
+    "Drinking Water (%)": 93.9578
+  },
+  {
+    "Country": "Cyprus",
+    "Drinking Water (%)": 95.37882
+  },
+  {
+    "Country": "R√©union",
+    "Drinking Water (%)": 95.7806
+  },
+  {
+    "Country": "Czechia",
+    "Drinking Water (%)": 96.32186
+  },
+  {
+    "Country": "Qatar",
+    "Drinking Water (%)": 96.6
+  },
+  {
+    "Country": "France",
+    "Drinking Water (%)": 96.77526
+  },
+  {
+    "Country": "Bulgaria",
+    "Drinking Water (%)": 96.83742
+  },
+  {
+    "Country": "North Macedonia",
+    "Drinking Water (%)": 97.34227
+  },
+  {
+    "Country": "Northern Europe",
+    "Drinking Water (%)": 97.6164
+  },
+  {
+    "Country": "Austria",
+    "Drinking Water (%)": 97.71394
+  },
+  {
+    "Country": "Japan",
+    "Drinking Water (%)": 97.86467
+  },
+  {
+    "Country": "Canada",
+    "Drinking Water (%)": 98.21185
+  },
+  {
+    "Country": "Niue",
+    "Drinking Water (%)": 98.23664
+  },
+  {
+    "Country": "Western Europe",
+    "Drinking Water (%)": 98.4609
+  },
+  {
+    "Country": "Bahrain",
+    "Drinking Water (%)": 98.79928
+  },
+  {
+    "Country": "Spain",
+    "Drinking Water (%)": 98.83858
+  },
+  {
+    "Country": "Greece",
+    "Drinking Water (%)": 98.95221
+  },
+  {
+    "Country": "Martinique",
+    "Drinking Water (%)": 98.98241
+  },
+  {
+    "Country": "Guam",
+    "Drinking Water (%)": 99.3
+  },
+  {
+    "Country": "Belgium",
+    "Drinking Water (%)": 99.52319
+  },
+  {
+    "Country": "Germany",
+    "Drinking Water (%)": 99.8
+  },
+  {
+    "Country": "Israel",
+    "Drinking Water (%)": 99.91615
+  },
+  {
+    "Country": "Sweden",
+    "Drinking Water (%)": 99.94
+  },
+  {
+    "Country": "United Kingdom of Great Britain and Northern Ireland",
+    "Drinking Water (%)": 99.96678
+  },
+  {
+    "Country": "Gibraltar",
+    "Drinking Water (%)": 100
+  },
+  {
+    "Country": "Kuwait",
+    "Drinking Water (%)": 100
+  },
+  {
+    "Country": "Liechtenstein",
+    "Drinking Water (%)": 100
+  },
+  {
+    "Country": "Luxembourg",
+    "Drinking Water (%)": 100
+  },
+  {
+    "Country": "Malta",
+    "Drinking Water (%)": 100
+  },
+  {
+    "Country": "Monaco",
+    "Drinking Water (%)": 100
+  },
+  {
+    "Country": "Netherlands",
+    "Drinking Water (%)": 100
+  },
+  {
+    "Country": "Norway",
+    "Drinking Water (%)": 100
+  },
+  {
+    "Country": "San Marino",
+    "Drinking Water (%)": 100
+  },
+  {
+    "Country": "Singapore",
+    "Drinking Water (%)": 100
+  }
+]
