@@ -12,27 +12,35 @@
     <h1 id=title>Filtering Methods</h1>
 </div>
 <div class="parallax"></div>
-<h2 id = p>Enter Capitalized Country Name: </h2><input style="font-size:24pt;height:70px;width:240px;"text = "text" id="mysearch">
+<h2 id = p>Enter Capitalized Country Name: </h2>
+<button class = "button button1" style = "width:150px;height:70px;font-size:18pt;font-family: comic sans ms;"onclick="reset()">Reset</button>
+<input style="font-size:24pt;height:70px;width:240px;"text = "text" id="mysearch">
 <button class = "button button1" style = "width:150px;height:70px;font-size:18pt;font-family: comic sans ms;"onclick="goSearch()">Submit</button>
 <h3 id="results"></h3>
-<canvas id="mycanvas" width="800"height = "1000"></canvas>
+<canvas id="mycanvas" width="800"height = "560"></canvas>
 </body>
  <script>
         var y = 0;
         var newstring = "Percentage of people using safely managed drinking water services. Type 'clear' to clear graph";
         results.innerHTML = newstring;
         var inData = false;
+        var c = document.getElementById("mycanvas");
+        var ctx = c.getContext('2d');
+        
+     function reset(){
+        ctx.clearRect(0, 0, c.width, c.height);
+        newstring = "Graph Reset"
+        y = 0
+     }
         function goSearch(){
             inData = false;
             var myinput = document.getElementById("mysearch").value;
             var resultsdiv = document.getElementById('results');                
-            var c = document.getElementById("mycanvas");
-            var ctx = c.getContext('2d');
             newstring = "Percentage of people using safely managed drinking water services";
             for (i = 0; i<data.length; i++){
                 if (myinput == data[i]['Country']){
                     y = y+100
-                    ctx.fillStyle="red";
+                    ctx.fillStyle= "#939798";
                     ctx.fillRect(0,y,data[i]['Drinking Water (%)']*10, 50);
                     ctx.font = "30px Arial";
                     ctx.fillStyle='black';
@@ -42,19 +50,13 @@
                 }
                 }
             if(inData == false){
-                newstring = "ERROR: Could Not Find In Data";
-            }
-            if(myinput == "clear"){
-                ctx.clearRect(0, 0, c.width, c.height);
-                y = 0;
-                newstring = "Graph Cleared";
-            }if(myinput == "Clear"){
-                ctx.clearRect(0, 0, c.width, c.height);
-                y = 0;
-                newstring = "Graph Cleared";
+                newstring = "ERROR: Could Not Find Input In Data";
             }if(myinput == ""){
                 newstring = "Please Enter a Country";
+            }if(y>550){
+                alert("You have reached the bottom of the canvas. Please reset the graph to continue.")
             }
+            
             results.innerHTML = newstring;
             
         }
@@ -122,4 +124,4 @@
     </center>
     </div>
 </html>
-    
+   
